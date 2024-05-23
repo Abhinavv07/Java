@@ -145,10 +145,10 @@ public class Arrays {
                 idx = mid;
                 break;
             } else if (arr[mid] < target) {
-                start = mid - 1;
+                end = mid + 1;
 
             } else {
-                end = mid - 1;
+                start = mid - 1;
             }
         }
 
