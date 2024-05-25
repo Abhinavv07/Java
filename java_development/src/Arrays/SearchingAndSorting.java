@@ -21,7 +21,7 @@ public class SearchingAndSorting {
             min = i;
 
             for (int j = i + 1; j < arr.length; j++) {
-                if (arr[j] < arr[min]) {
+                if (arr[j] > arr[min]) {
                     min = j;
                 }
             }
@@ -32,7 +32,7 @@ public class SearchingAndSorting {
         }
 
         System.out.println("Sorted array");
-        for (int i = 0; i < arr.length; i++) {
+        for(int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
 
@@ -40,16 +40,16 @@ public class SearchingAndSorting {
         System.out.println("\nEnter target");
         int tg = sc.nextInt();
 
-        int high = arr.length - 1;
-        int low = 0;
+        int high = 0;
+        int low = arr.length - 1;
         int idx = -1;
-        while (low <= high) {
-            int mid = (high + low) / 2; // Corrected calculation of mid index
+        while (high <= low) {
+            int mid = (high + low) / 2; 
 
             if (arr[mid] == tg) {
                 idx = mid;
                 break;
-            } else if (arr[mid] < tg) {
+            } else if (arr[mid] > tg) {
                 low = mid + 1;
             } else {
                 high = mid - 1;
