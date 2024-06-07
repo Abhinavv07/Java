@@ -12,6 +12,7 @@ public class PrintingSumOfRowsColumn {
         int c = sc.nextInt();
 
         int [][]arr = new int[r][c];
+
         int i,j;
         for( i = 0; i < r; i++)
         {
