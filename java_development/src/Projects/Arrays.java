@@ -13,7 +13,7 @@ public class Arrays {
 
         for (int i = 0; i < arr.length; i++) {
             System.out.println("Enter element");
-            System.out.print("-> ");
+            System.out.print("↪ ");
             arr[i] = sc.nextInt();
         }
 
@@ -29,7 +29,7 @@ public class Arrays {
         System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
         System.out.println("Enter 1 to sort array using bubble sort");
         System.out.println("Enter 2 to sort array using selection sort");
-        System.out.print("-> ");
+        System.out.print("⇒ ");
         int choice = sc.nextInt();
 
         switch (choice) {
