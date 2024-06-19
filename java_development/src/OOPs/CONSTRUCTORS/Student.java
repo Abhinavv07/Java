@@ -17,7 +17,7 @@ public class Student
         this.science = science;
         this.english = english;
         this.computer = computer;
-    }
+     }
 
     void calc_marks()
     {
