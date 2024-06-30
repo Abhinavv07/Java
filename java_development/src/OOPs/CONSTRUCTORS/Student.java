@@ -48,7 +48,5 @@ public class Student
         Student s = new Student("Abhinav",06,50,50,50,50);
         s.calc_marks();
         s.dislay();
-
-
     }
 }
