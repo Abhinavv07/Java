@@ -1,5 +1,10 @@
-public class Main {
+public class Main
+{
     public static void main(String[] args) {
-        System.out.println("HEllo");
+        int i;
+        for ( i = 5; i <= 50; i+=5) ;
+        {
+            System.out.println(i);
+        }
     }
 }
