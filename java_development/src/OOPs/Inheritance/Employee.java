@@ -1,5 +1,7 @@
 package OOPs.Inheritance;
+
 import java.util.*;
+
 class salaryCalculation {
     private int UID;
     private String name;
@@ -18,12 +20,15 @@ class salaryCalculation {
     void setName(String name) {
         this.name = name;
     }
+
     void setUID(int UID) {
         this.UID = UID;
     }
+
     void setGrade(char grade) {
         this.grade = grade;
     }
+
     void setSalary(double salary) {
         this.salary = salary;
     }
@@ -39,13 +44,16 @@ class salaryCalculation {
     String getName() {
         return this.name;
     }
+
     char getGrade() {
         return this.grade;
     }
+
     int getUID() {
         return this.UID;
     }
 }
+
 public class Employee {
     public static void main(String[] args) {
         salaryCalculation e1 = new salaryCalculation();

@@ -72,6 +72,8 @@ public class Arrays {
                 default:
                     System.out.println("Wrong choice entered");
                     sc.close();
+                    System.exit(0);
+
             }
         } else {
             System.out.println("Exiting...........");
