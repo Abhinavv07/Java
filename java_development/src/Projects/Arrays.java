@@ -127,10 +127,8 @@ public class Arrays {
                 break;
             }
         }
-        if (idx == -1)
-            System.out.println("Element not found");
-        else
-            System.out.println("Element found at " + idx + " index");
+        if (idx == -1) System.out.println("Element not found");
+        else System.out.println("Element found at " + idx + " index");
 
     }
 
@@ -154,10 +152,8 @@ public class Arrays {
             }
         }
 
-        if (idx == -1)
-            System.out.println("Element not found");
-        else
-            System.out.println("Element found at index " + idx);
+        if (idx == -1) System.out.println("Element not found");
+        else System.out.println("Element found at index " + idx);
 
     }
 
