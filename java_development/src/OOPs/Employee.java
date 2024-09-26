@@ -6,12 +6,13 @@ class EmployeeDetails {
     private String uid;
     private double salary;
 
-    public EmployeeDetails(){
+    public EmployeeDetails() {
         this.name = " ";
         this.grade = ' ';
         this.uid = " ";
         this.salary = 0.0D;
     }
+
     public void setName(String name) {
         this.name = name;
     }
@@ -45,7 +46,7 @@ class EmployeeDetails {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "Name of Employee :- " + getName() + "\nGrade :- " + getGrade() + "\nUID :- " + getUid() + "\nSalary :- " + getSalary();
     }
 }

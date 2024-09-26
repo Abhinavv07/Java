@@ -5,7 +5,6 @@ public class Student {
     private String studentName;
     private int rollNo;
     private double avg;
-    private double totalMarks;
     private String rank;
     private int hindi, english, science, computer;
 

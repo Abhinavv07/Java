@@ -1,14 +1,15 @@
 package Arrays;
 
-import java.util.*;
+import java.util.Scanner;
+
 //Merging no1 and no2 in no[]
 class merge_no {
     public static void main(String args[]) {
         Scanner input = new Scanner(System.in);
-        int n1 = 0, n2 = 0, nctr = 0;
-        int no1[] = new int[3];
-        int no2[] = new int[4];
-        int no[] = new int[no1.length + no2.length];
+        int n1 , n2 , nctr;
+        int[] no1 = new int[3];
+        int[] no2 = new int[4];
+        int[] no = new int[no1.length + no2.length];
         for (n1 = 0; n1 < no1.length; n1++) {
             System.out.print("Enter a no:-");
             no1[n1] = input.nextInt();

@@ -67,13 +67,11 @@ public class Switch {
         for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
             if (Character.isUpperCase(ch)) {
-                Character.toLowerCase(ch);
-                s2 += ch;
+                ch = Character.toLowerCase(ch);
+            } else if (Character.isLowerCase(ch)) {
+                ch = Character.toUpperCase(ch);
             }
-            if (Character.isLowerCase(ch)) {
-                Character.toUpperCase(ch);
-                s2 += ch;
-            }
+            s2 +=ch;
         }
         return s2;
     }

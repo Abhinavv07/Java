@@ -33,7 +33,7 @@ public class SearchingAndSorting {
         }
 
         System.out.println("Sorted array");
-        for(int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
 
@@ -45,7 +45,7 @@ public class SearchingAndSorting {
         int low = arr.length - 1;
         int idx = -1;
         while (high <= low) {
-            int mid = (high + low) / 2; 
+            int mid = (high + low) / 2;
 
             if (arr[mid] == tg) {
                 idx = mid;
