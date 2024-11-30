@@ -1,35 +1,26 @@
 package Arrays;
 
-import java.util.Scanner;
+class merge_no
+{
+    public static void main(String[] args) {
+        int arr1[] = {4,5,6,7};
+        int arr2[] = {8,9,10,11};
 
-//Merging no1 and no2 in no[]
-class merge_no {
-    public static void main(String args[]) {
-        Scanner input = new Scanner(System.in);
-        int n1 , n2 , nctr;
-        int[] no1 = new int[3];
-        int[] no2 = new int[4];
-        int[] no = new int[no1.length + no2.length];
-        for (n1 = 0; n1 < no1.length; n1++) {
-            System.out.print("Enter a no:-");
-            no1[n1] = input.nextInt();
+        int arr[]  = new int[arr2.length+ arr1.length];
+        int k  = 0;
+        for(int i = 0; i < arr1.length; i++)
+        {
+            arr[k] = arr1[i];
+            k++;
         }
-        for (n2 = 0; n2 < no2.length; n2++) {
-            System.out.print("Enter a no:-");
-            no2[n2] = input.nextInt();
+        for(int i = 0; i < arr2.length; i++)
+        {
+            arr[k] = arr2[i];
+            k++;
         }
-
-        //Merging both in no[]
-        int ctr1 = 0, ctr2 = 0;
-        for (nctr = 0; nctr < (no1.length + no2.length); nctr++) {
-            if (nctr < n1)
-                no[nctr] = no1[ctr1++];
-            else
-                no[nctr] = no2[ctr2++];
-        }
-        for (nctr = 0; nctr < no.length; nctr++) {
-            if (no[nctr] > 99 && no[nctr] < 1000)
-                System.out.print(no[nctr] + " ");
+        for(int i=0; i < arr.length; i++)
+        {
+            System.out.print(arr[i] + " ");
         }
     }
 }
